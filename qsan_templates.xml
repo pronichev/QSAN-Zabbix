@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>3.0</version>
+    <date>2017-09-27T18:12:23Z</date>
+    <groups>
+        <group>
+            <name>Templates Custom</name>
+        </group>
+    </groups>
+    <templates>
+        <template>
+            <template>Template SNMP QSAN Storage</template>
+            <name>Template SNMP QSAN Storage</name>
+            <description>Template SNMP QSAN Storage</description>
+            <groups>
+                <group>
+                    <name>Templates Custom</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>Health</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>Ctr1 Location BBM Temperature</name>
+                    <type>10</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>qsan_temp.sh[{HOST.IP},1]</key>
+                    <delay>120</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>C</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>General</name>
+                        </application>
+                        <application>
+                            <name>Health</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Ctr2 Location BBM Temperature</name>
+                    <type>10</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>qsan_temp.sh[{HOST.IP},2]</key>
+                    <delay>120</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>C</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>General</name>
+                        </application>
+                        <application>
+                            <name>Health</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Dual Controller Status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>QSAN-SNMP-MIB::sys-status-dual</snmp_oid>
+                    <key>sys-status-dual</key>
+                    <delay>120</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Health</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>QSAN System Status</name>
+                    </valuemap>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Fan Status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>QSAN-SNMP-MIB::sys-status-fan</snmp_oid>
+                    <key>sys-status-fan</key>
+                    <delay>120</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Health</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>QSAN System Status</name>
+                    </valuemap>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Power Supply Status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>QSAN-SNMP-MIB::sys-status-psu</snmp_oid>
+                    <key>sys-status-psu</key>
+                    <delay>120</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Health</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>QSAN System Status</name>
+                    </valuemap>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>RAID Status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>QSAN-SNMP-MIB::sys-status-raid</snmp_oid>
+                    <key>sys-status-raid</key>
+                    <delay>120</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Health</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>QSAN System Status</name>
+                    </valuemap>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Temperature Status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>QSAN-SNMP-MIB::sys-status-temp</snmp_oid>
+                    <key>sys-status-temp</key>
+                    <delay>120</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Health</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>QSAN System Status</name>
+                    </valuemap>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>UPS Status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>QSAN-SNMP-MIB::sys-status-ups</snmp_oid>
+                    <key>sys-status-ups</key>
+                    <delay>120</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Health</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>QSAN System Status</name>
+                    </valuemap>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Voltage Status</name>
+                    <type>4</type>
+                    <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
+                    <multiplier>0</multiplier>
+                    <snmp_oid>QSAN-SNMP-MIB::sys-status-volt</snmp_oid>
+                    <key>sys-status-volt</key>
+                    <delay>120</delay>
+                    <history>30</history>
+                    <trends>90</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Health</name>
+                        </application>
+                    </applications>
+                    <valuemap>
+                        <name>QSAN System Status</name>
+                    </valuemap>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Zabbix SNMP Connected</name>
+                    <type>5</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>zabbix[host,snmp,available]</key>
+                    <delay>60</delay>
+                    <history>7</history>
+                    <trends>30</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>General</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+            </items>
+            <discovery_rules/>
+            <macros/>
+            <templates>
+                <template>
+                    <name>Template SNMP Generic</name>
+                </template>
+                <template>
+                    <name>Template SNMP traps</name>
+                </template>
+            </templates>
+            <screens/>
+        </template>
+        <template>
+            <template>Template SNMP trap fallback</template>
+            <name>Template SNMP trap fallback</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates Custom</name>
+                </group>
+            </groups>
+            <applications>
+                <application>
+                    <name>SNMP traps</name>
+                </application>
+            </applications>
+            <items>
+                <item>
+                    <name>SNMP trap fallback</name>
+                    <type>17</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>snmptrap.fallback</key>
+                    <delay>0</delay>
+                    <history>90</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>2</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>SNMP traps</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt>hh:mm:ss yyyy/MM/dd</logtimefmt>
+                </item>
+            </items>
+            <discovery_rules/>
+            <macros/>
+            <templates/>
+            <screens/>
+        </template>
+        <template>
+            <template>Template SNMP traps</template>
+            <name>Template SNMP traps</name>
+            <description/>
+            <groups>
+                <group>
+                    <name>Templates Custom</name>
+                </group>
+            </groups>
+            <applications/>
+            <items/>
+            <discovery_rules/>
+            <macros/>
+            <templates>
+                <template>
+                    <name>Template SNMP trap fallback</name>
+                </template>
+            </templates>
+            <screens/>
+        </template>
+    </templates>
+    <triggers>
+        <trigger>
+            <expression>{Template SNMP trap fallback:snmptrap.fallback.nodata(300)}=0</expression>
+            <name>Unmatched SNMP trap received from {HOST.NAME}</name>
+            <url/>
+            <status>0</status>
+            <priority>1</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP QSAN Storage:sys-status-dual.last()}&lt;&gt;0</expression>
+            <name>{HOST.NAME} Dual Controller Status Degraded</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>{HOST.NAME} Нет подключения к устройству по SNMP</name>
+                    <expression>{Template SNMP QSAN Storage:zabbix[host,snmp,available].last(#5)}&lt;&gt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP QSAN Storage:sys-status-fan.last()}&lt;&gt;0</expression>
+            <name>{HOST.NAME} Fan Status Degraded</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>{HOST.NAME} Нет подключения к устройству по SNMP</name>
+                    <expression>{Template SNMP QSAN Storage:zabbix[host,snmp,available].last(#5)}&lt;&gt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP QSAN Storage:sys-status-psu.last()}&lt;&gt;0</expression>
+            <name>{HOST.NAME} Power Supply Status Degraded</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>{HOST.NAME} Нет подключения к устройству по SNMP</name>
+                    <expression>{Template SNMP QSAN Storage:zabbix[host,snmp,available].last(#5)}&lt;&gt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP QSAN Storage:sys-status-raid.last()}&lt;&gt;0</expression>
+            <name>{HOST.NAME} RAID Status Degraded</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>{HOST.NAME} Нет подключения к устройству по SNMP</name>
+                    <expression>{Template SNMP QSAN Storage:zabbix[host,snmp,available].last(#5)}&lt;&gt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP QSAN Storage:sys-status-temp.last()}&lt;&gt;0</expression>
+            <name>{HOST.NAME} Temperature Status Degraded</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>{HOST.NAME} Нет подключения к устройству по SNMP</name>
+                    <expression>{Template SNMP QSAN Storage:zabbix[host,snmp,available].last(#5)}&lt;&gt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP QSAN Storage:sys-status-ups.last()}&lt;&gt;0</expression>
+            <name>{HOST.NAME} UPS Status Degraded</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>{HOST.NAME} Нет подключения к устройству по SNMP</name>
+                    <expression>{Template SNMP QSAN Storage:zabbix[host,snmp,available].last(#5)}&lt;&gt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP QSAN Storage:sys-status-volt.last()}&lt;&gt;0</expression>
+            <name>{HOST.NAME} Voltage Status Degraded</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>{HOST.NAME} Нет подключения к устройству по SNMP</name>
+                    <expression>{Template SNMP QSAN Storage:zabbix[host,snmp,available].last(#5)}&lt;&gt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP QSAN Storage:zabbix[host,snmp,available].last(#5)}&lt;&gt;1</expression>
+            <name>{HOST.NAME} Нет подключения к устройству по SNMP</name>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description/>
+            <type>0</type>
+            <dependencies/>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP QSAN Storage:qsan_temp.sh[{HOST.IP},1].last()}&gt;35 or {Template SNMP QSAN Storage:qsan_temp.sh[{HOST.IP},2].last()}&gt;35</expression>
+            <name>Температура {HOST.NAME} высокая</name>
+            <url/>
+            <status>0</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>{HOST.NAME} Нет подключения к устройству по SNMP</name>
+                    <expression>{Template SNMP QSAN Storage:zabbix[host,snmp,available].last(#5)}&lt;&gt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+        <trigger>
+            <expression>{Template SNMP QSAN Storage:qsan_temp.sh[{HOST.IP},1].last()}&gt;39 or {Template SNMP QSAN Storage:qsan_temp.sh[{HOST.IP},2].last()}&gt;39</expression>
+            <name>Температура {HOST.NAME} критическая</name>
+            <url/>
+            <status>0</status>
+            <priority>4</priority>
+            <description/>
+            <type>0</type>
+            <dependencies>
+                <dependency>
+                    <name>{HOST.NAME} Нет подключения к устройству по SNMP</name>
+                    <expression>{Template SNMP QSAN Storage:zabbix[host,snmp,available].last(#5)}&lt;&gt;1</expression>
+                </dependency>
+            </dependencies>
+        </trigger>
+    </triggers>
+    <value_maps>
+        <value_map>
+            <name>QSAN System Status</name>
+            <mappings>
+                <mapping>
+                    <value>0</value>
+                    <newvalue>OK</newvalue>
+                </mapping>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Fail</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>
